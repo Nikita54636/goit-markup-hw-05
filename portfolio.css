@@ -439,3 +439,34 @@ body {
   background-color: #31d0aa;
   border-radius: 50%;
 }
+
+.cover-text {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  mix-blend-mode: normal;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 32px;
+}
+.marketing-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.image-list-item:hover .cover-text {
+  transform: translateY(0);
+}
+
+.menu-list::before {
+  content: "";
+  width: 1px
+  background-color #303030:
+}
+
+.portfolio {
+
+}
