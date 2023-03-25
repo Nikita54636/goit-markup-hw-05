@@ -452,6 +452,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   padding: 32px;
+  width: 100%;
 }
 .marketing-top-wrap {
   position: relative;
@@ -461,18 +462,20 @@ body {
   transform: translateY(0);
 }
 
-.menu-list-item {
-position: relative;
+.menu-list-item1 {
+  position: relative;
 }
 .active::before {
-  content: " ";
+  content: "";
   width: 100%;
   border-radius: 2px;
   height: 4px;
-  background-color #404BBF;
+  background-color: #404bbf;
   position: absolute;
-  top: 10px;
+  top: 53px;
+  display: block;
 }
+
 .navigation-item {
   display: flex;
   width: 100%;

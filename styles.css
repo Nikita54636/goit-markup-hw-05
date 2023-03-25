@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid tomato;
-}
+} */
 
 h1,
 h2,
@@ -662,24 +662,43 @@ ul {
   padding: 24px;
 }
 
-.modal-close: :hover
-.modal-close: :focus {
+.modal-close:hover,
+.modal-close:focus {
   border-color: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-close: :hover .svg-icon,
-.modal-close: :focus svg-icon {
+.modal-close:hover .svg-icon,
+.modal-close:focus .svg-icon {
   border-color: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-close {
   display: block;
   margin-left: auto;
+  background-color: transparent;
+  border: transparent;
 }
 
-/* .no-scroll {
-  overflow: hidden;
-} */
-.svg-icon {
+.svg-icon1 {
   height: 18px;
   width: 18px;
+}
+
+.menu-list-item1 {
+  position: relative;
+}
+.active::before {
+  content: "";
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background-color: #404bbf;
+  position: absolute;
+  top: 53px;
+  display: block;
+  /* border: 2px solid #404BBF; */
+}
+
+.navigation-item {
+  display: flex;
+  width: 100%;
 }
