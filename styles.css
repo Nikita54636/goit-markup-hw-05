@@ -146,6 +146,8 @@ body {
 .navigation-item:hover,
 .navigation-item:focus {
   color: #404bbf;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .border-name {
   border: 1px solid #e7e9fc;
@@ -172,6 +174,8 @@ body {
 .contacts-item:hover,
 .contacts-item:focus {
   color: #404bbf;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .name {
@@ -226,6 +230,7 @@ body {
 
 .order-service:focus {
   color: #404bbf;
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 /* .container-goal {
@@ -421,7 +426,8 @@ ul {
 .svg-our-list:focus {
   background-color: #404bbf;
   border-radius: 50%;
-
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
   /* color: #404bbf; */
 }
 
@@ -500,6 +506,8 @@ ul {
 .svg-our-footer:focus {
   background-color: #31d0aa;
   border-radius: 50%;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-our-footer {
@@ -589,6 +597,8 @@ ul {
 .customers-link:focus > .customers-logo {
   fill: #404bbf;
   border-color: #404bbf;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-logo {
   width: 168px;
@@ -601,8 +611,8 @@ ul {
 
 .team-decorative-container {
   padding-top: 32px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 32px;
 }
@@ -626,11 +636,15 @@ ul {
   background-color: rgba(255, 255, 255, 0.1);
   background-color: #31d0aa;
   border-radius: 50%;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-our-list-footer:hover,
 .svg-our-list-footer:focus {
   background-color: #31d0aa;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -665,10 +679,14 @@ ul {
 .modal-close:hover,
 .modal-close:focus {
   border-color: 1px solid rgba(0, 0, 0, 0.1);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover .svg-icon,
 .modal-close:focus .svg-icon {
   border-color: 1px solid rgba(0, 0, 0, 0.1);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
@@ -686,7 +704,7 @@ ul {
 .menu-list-item1 {
   position: relative;
 }
-.active::before {
+.active::after {
   content: "";
   width: 100%;
   border-radius: 2px;

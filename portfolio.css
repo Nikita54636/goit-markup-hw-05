@@ -90,6 +90,8 @@ address {
 .navigation-item:hover,
 .navigation-item:focus {
   color: #404bbf;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-item {
   font-family: "Roboto";
@@ -124,6 +126,8 @@ address {
 .contacts-item:hover,
 .contacts-item:focus {
   color: #404bbf;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-ul {
@@ -201,10 +205,14 @@ body {
 .order-service:hover {
   background-color: #404bbf;
   color: var(--white);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-service:focus {
   background-color: #404bbf;
   color: var(--white);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .image-item {
@@ -297,6 +305,8 @@ body {
 
 .svg-our-footer:hover,
 .svg-our-footer:focus {
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ul-svg-footer {
   /* flex-direction: column; */
@@ -347,6 +357,8 @@ body {
 .svg-our-list-footer:hover,
 .svg-our-list-footer:focus {
   background-color: #31d0aa;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-our-footer {
@@ -401,6 +413,8 @@ body {
   color: #404bbf;
   margin-top: 8px;
   padding-right: 16px;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-decorative-container {
   padding-top: 32px;
@@ -418,6 +432,8 @@ body {
 .image-list-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link {
 }
@@ -438,6 +454,8 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   background-color: #31d0aa;
   border-radius: 50%;
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cover-text {
@@ -458,14 +476,17 @@ body {
   position: relative;
   overflow: hidden;
 }
-.image-list-item:hover .cover-text {
+.image-list-item:hover .cover-text,
+.image-list-item:focus .cover-text {
   transform: translateY(0);
+  transition: opacity 250ms linear, visibility 250ms linear,
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-list-item1 {
   position: relative;
 }
-.active::before {
+.active::after {
   content: "";
   width: 100%;
   border-radius: 2px;
